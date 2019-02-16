@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 03b9dfe1b662da043979904bfd1bcf23
+guid: 365452e9b890a9b48815ce1719233eea
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: LOCKER_Mat
+    2100000: lambert3
+    2100002: lambert2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface1
+    4300000: polySurface2
   externalObjects: {}
   materials:
     importMaterials: 1

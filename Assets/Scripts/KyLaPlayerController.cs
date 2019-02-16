@@ -11,6 +11,7 @@ public class KyLaPlayerController : MonoBehaviour {
     //Item Pickup Logic
     public GameObject MessagePanel;
     public GameObject ObjectivePanel;
+    public GameObject loseState;
 
     void Start() {
 
@@ -35,7 +36,8 @@ public class KyLaPlayerController : MonoBehaviour {
         {
             Cursor.lockState = CursorLockMode.None;
         }
-
+        
+      
     }
 
     // Start of PickUP Logic
@@ -44,6 +46,12 @@ public class KyLaPlayerController : MonoBehaviour {
         if (other.gameObject.CompareTag("Pickup"))
         {
             MessagePanel.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("loseZone"))
+        {
+            loseState.SetActive(true);
+            Time.timeScale = 0.0f;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     private void OnTriggerExit(Collider other)
