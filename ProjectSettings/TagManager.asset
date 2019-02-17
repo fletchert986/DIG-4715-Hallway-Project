@@ -8,6 +8,7 @@ TagManager:
   - Pickup
   - loseZone
   - Win
+  - KillCamera
   layers:
   - Default
   - TransparentFX
