@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KyLaPlayerController : MonoBehaviour {
 
@@ -54,6 +55,11 @@ public class KyLaPlayerController : MonoBehaviour {
             loseState.SetActive(true);
             Time.timeScale = 0.0f;
             Cursor.lockState = CursorLockMode.None;
+        }
+        if (other.gameObject.CompareTag("Win"))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     private void OnTriggerExit(Collider other)

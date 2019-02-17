@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/School Hallway.unity
     guid: 34f94581524c14e46956f906c148539f
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 9e766d6bb57dc1b418e326ddcc2e5861
   m_configObjects: {}
