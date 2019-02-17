@@ -12,6 +12,8 @@ public class KyLaPlayerController : MonoBehaviour {
     public GameObject MessagePanel;
     public GameObject ObjectivePanel;
     public GameObject loseState;
+    public GameObject godLight;
+    public GameObject exitDoor;
 
     void Start() {
 
@@ -68,6 +70,8 @@ public class KyLaPlayerController : MonoBehaviour {
             MessagePanel.SetActive(false);
             other.gameObject.SetActive(false);
             ObjectivePanel.SetActive(true);
+            godLight.SetActive(true);
+            exitDoor.SetActive(false);
         }
     }
 }
