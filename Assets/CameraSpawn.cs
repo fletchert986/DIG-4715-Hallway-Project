@@ -7,11 +7,17 @@ public class CameraSpawn : MonoBehaviour
     public GameObject player;
     public GameObject guard;
     public GameObject cinematicCamera;
-    public float time = 7;
-  
+    public float time;
+    private float startTime;
+
+    private void Start()
+    {
+        startTime = Time.time;
+    }
+
     private void Update ()
     {
-        if ((Time.time >= time))
+        if ((Time.time >= startTime + time))
         {
             player.SetActive(true);
             guard.SetActive(true);
