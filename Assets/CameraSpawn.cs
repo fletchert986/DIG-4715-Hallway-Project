@@ -8,11 +8,16 @@ public class CameraSpawn : MonoBehaviour
     public GameObject guard;
     public GameObject cinematicCamera;
     public float time;
-    private float startTime;
+    private float startTime = 0;
+
 
     private void Start()
     {
-        startTime = Time.time;
+
+        
+            startTime = Time.time;
+
+        
     }
 
     private void Update ()
