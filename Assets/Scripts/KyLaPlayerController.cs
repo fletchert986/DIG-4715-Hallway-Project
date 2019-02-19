@@ -15,11 +15,13 @@ public class KyLaPlayerController : MonoBehaviour {
     public GameObject loseState;
     public GameObject godLight;
     public GameObject exitDoor;
+    private AudioSource audioSource;
 
     void Start() {
 
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -40,6 +42,7 @@ public class KyLaPlayerController : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
         }
         
+        
       
     }
 
@@ -49,6 +52,7 @@ public class KyLaPlayerController : MonoBehaviour {
         if (other.gameObject.CompareTag("Pickup"))
         {
             MessagePanel.SetActive(true);
+            audioSource.Play();
         }
         if (other.gameObject.CompareTag("loseZone"))
         {
