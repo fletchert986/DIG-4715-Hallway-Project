@@ -71,7 +71,7 @@ public class KyLaPlayerController : MonoBehaviour {
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Pickup") && Input.GetKey("g"))
+        if (other.gameObject.CompareTag("Pickup") && Input.GetButton("Fire1"))
         {
             MessagePanel.SetActive(false);
             other.gameObject.SetActive(false);
